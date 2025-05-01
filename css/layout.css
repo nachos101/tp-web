@@ -1,0 +1,37 @@
+.contenedor {
+    background-color: blue;
+    display: flex;
+}
+
+.encabezado {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 500px;
+    padding-right: 532px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 15px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;  
+}
+
+.cuerpo{
+    background-color: wheat;
+    border: 5px dashed black;
+    padding-bottom: 250px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+h1{
+    color: red;
+}
