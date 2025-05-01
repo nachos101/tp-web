@@ -5,10 +5,11 @@
 
 .encabezado {
     background-color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 500px;
-    padding-right: 532px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
 }
 
 .navbar{
@@ -26,7 +27,7 @@
 .cuerpo{
     background-color: wheat;
     border: 5px dashed black;
-    padding-bottom: 250px;
+    padding-bottom: 30%;
     margin-left: 50px;
     margin-right: 50px;
 }
