@@ -3,8 +3,8 @@
     margin: 0;
 }
 .contenedor {
-    background-color: rgba(239, 239, 243, 0.493);
-    display: flex;
+    background-color: white;
+    display: flexbox;
 }
 
 .encabezado {
@@ -28,7 +28,7 @@
 .navbar li{
     list-style: none;
     margin: 15px;
-    background-color: rgb(248, 244, 244);
+    background-color: white;
     padding: 10px;  
 }
 
@@ -36,10 +36,18 @@
     background-color: wheat;
     border: 1px solid black;
     padding-bottom: 30%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 a{
     color: black;
+}
+
+.ePayDesign{
+    background-color:rgb(216, 216, 168);
+}
+
+.footer{
+    padding-top: 7%;
 }
