@@ -67,6 +67,11 @@ a{
     background-color:rgb(216, 216, 168);
 }
 
+table, td, tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
 .footer{
     padding-top: 7%;
 }
