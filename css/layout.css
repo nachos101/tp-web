@@ -1,10 +1,10 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 .contenedor {
     background-color: white;
-    display: flexbox;
 }
 
 .encabezado {
@@ -25,6 +25,7 @@
     margin-bottom: 3%;
 }
 
+
 .navbar li{
     list-style: none;
     margin: 15px;
@@ -33,15 +34,33 @@
 }
 
 .cuerpo{
+    display: flex;
     background-color: wheat;
     border: 1px solid black;
-    padding-bottom: 30%;
     margin-left: 10px;
     margin-right: 10px;
 }
 
 a{
     color: black;
+}
+
+.contPrincipal{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.derecha{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+}
+
+.list{
+    background-color: azure;
+    list-style: none;
 }
 
 .ePayDesign{
