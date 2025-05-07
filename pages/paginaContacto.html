@@ -32,8 +32,9 @@
                     </select>
                     </label>
                     <label for="observaciones">Observaciones:</label><textarea name="Observaciones" rows="8" cols="40"></textarea>
-                    <label id="captcha"></label>
-                    <label>Ingrese el captcha:</label><input id="textCaptcha" type="text" name="captcha" value=""/> 
+                    <p>Captcha:<span id="captcha"></span></p>
+                    <label>Respuesta:</label><input id="respuesta" type="number" name="Respuesta" value=""/> 
+                    <p id="verificacion"></p>
                     <button class="boton" id="Enviar">Enviar</button>
                 </form>
             </div>
@@ -42,5 +43,6 @@
     <div class="footer">
         <h4>QUARTZ STORE ©, 2025</h4>
     </div>
+    <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>

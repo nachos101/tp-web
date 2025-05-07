@@ -90,6 +90,20 @@ table, td, tr{
     padding-top: 7%;
 }
 
+.boton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 30px;;
+    cursor: pointer;
+}
+
 .formulario {
     display: grid;
     grid-column: auto;
@@ -123,16 +137,9 @@ table, td, tr{
     margin: 3px;
 }
 
-input[type="text"]:focus{
+input[type="text"]:focus, textarea:focus {
     border: 2px solid blue;
     background-color: #f9f9f9;
-    outline: none;
-    box-shadow: 0 0 5px red;
-}
-
-textarea:focus{
-    background-color: beige;
-    border: 2px solid green;
     outline: none;
     box-shadow: 0 0 5px red;
 }
@@ -140,4 +147,14 @@ textarea:focus{
 .formulario textarea {
     grid-column: span 2; 
     resize: none;
+}
+
+.opciones{
+    margin: 5px;
+}
+
+span{
+    border: 1px solid black;
+    padding: 1px;
+    margin-left: 15px;;
 }
