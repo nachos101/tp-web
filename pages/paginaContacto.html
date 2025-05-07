@@ -16,7 +16,27 @@
             <li> <a href="paginaRelojes.html">Relojes <a> </li>
             <li> <a>Contacto</a> </li>
         </ul>
-        <div>
+        <div class="wet">
+            <div class="formulario">
+                <form>
+                    <label for="Nombre">Nombre:</label><input id="Nombre" type="text" name="Nombre" value=""/>
+                    <label for="Apellido">Apellido:</label><input id="Apellido" type="text" name="Apellido" value=""/>
+                    <label for="Documento">Documento:</label><input id="Documento" type="text" name="Documento" maxlength="8" value=""/>
+                    <label for="Direccion">Direccion:</label><input id="Direccion" type="text" name="Direccion" value=""/>
+                    <label for="email">Mail de Contacto:</label><input id="email" type="text" name="email" value=""/>
+                    <label> Seleccione su problema
+                    <select class="opciones" name="motivo" id="mot">
+                        <option value="Compra">Compra</option>
+                        <option value="Pago">Pago</option>
+                        <option value="Envio">Envio</option>
+                    </select>
+                    </label>
+                    <label for="observaciones">Observaciones:</label><textarea name="Observaciones" rows="8" cols="40"></textarea>
+                    <label id="captcha"></label>
+                    <label>Ingrese el captcha:</label><input id="textCaptcha" type="text" name="captcha" value=""/> 
+                    <button class="boton" id="Enviar">Enviar</button>
+                </form>
+            </div>
         </div>
     </div>
     <div class="footer">
