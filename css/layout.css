@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    
 }
+
 .contenedor {
     background-color: white;
 }
@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.navbar{
+.navbar {
     display: flex;
     justify-content: center;
     border: 1px solid black;
@@ -27,15 +27,14 @@
     margin-bottom: 3%;
 }
 
-
-.navbar li{
+.navbar li {
     list-style: none;
     margin: 15px;
     background-color: white;
-    padding: 10px;  
+    padding: 10px;
 }
 
-.cuerpo{
+.cuerpo {
     display: flex;
     background-color: rgb(240, 236, 230);
     border: 1px solid black;
@@ -43,28 +42,28 @@
     margin-right: 10px;
 }
 
-a{
+a {
     color: black;
 }
 
-.contPrincipal{
+.contPrincipal {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.wet{
+.wet {
     display: flex;
     justify-content: center;
 }
 
 .contPrincipal img {
-    width: 100%;     
-    height: auto;     
+    width: 100%;
+    height: auto;
     margin-top: 10px;
 }
 
-.derecha{
+.derecha {
     display: flex;
     flex-direction: column;
     background-color: rgb(240, 236, 230);
@@ -73,26 +72,26 @@ a{
     padding-bottom: 5%;
 }
 
-.derecha ul{
+.derecha ul {
     background-color: azure;
     list-style: none;
 }
 
-.ePayDesign{
-    background-color:rgb(216, 216, 168);
+.ePayDesign {
+    background-color: rgb(216, 216, 168);
 }
 
-table, td, tr{
+table, td, tr {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-.footer{
+.footer {
     padding-top: 7%;
 }
 
-.boton{
-    background-color: #4CAF50; /* Green */
+.boton {
+    background-color: #4CAF50;
     border: none;
     color: white;
     padding: 10px 24px;
@@ -101,7 +100,7 @@ table, td, tr{
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    margin-top: 30px;;
+    margin-top: 30px;
     cursor: pointer;
 }
 
@@ -111,25 +110,27 @@ table, td, tr{
     gap: 20px;
     width: 400px;
     padding: 40px;
-    border: 1px solid #746c6c; 
-    border-radius: 5px; 
+    border: 1px solid #746c6c;
+    border-radius: 5px;
 }
 
 .formulario label {
     text-align: right;
-    padding-right: 10px; 
-    white-space: nowrap; 
+    padding-right: 10px;
+    white-space: nowrap;
 }
 
-.formulario input, textarea {
-    width: 100%; 
+.formulario input,
+textarea {
+    width: 100%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
     margin: 3px;
 }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
     border: 2px solid blue;
     background-color: white;
     outline: none;
@@ -137,16 +138,41 @@ input[type="text"]:focus, textarea:focus {
 }
 
 .formulario textarea {
-    grid-column: span 2; 
+    grid-column: span 2;
     resize: none;
 }
 
-.opciones{
+.opciones {
     margin: 5px;
 }
 
-span{
+span {
     border: 1px solid black;
     padding: 1px;
-    margin-left: 15px;;
+    margin-left: 15px;
+}
+
+.lista-marcas {
+    list-style: none;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 15px;
+}
+
+.lista-marcas li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    padding-left: 28px;
+    color: #333;
+}
+
+
+.derecha p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
 }

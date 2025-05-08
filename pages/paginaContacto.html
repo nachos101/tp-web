@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,42 +7,61 @@
     <link rel="stylesheet" href="../css/layout.css">
 </head>
 <body class="contenedor">
-    <div>
-        <div class="encabezado">
-            <h1>QUARTZ STORE</h1>
-        </div>
+    <header class="encabezado">
+        <h1>QUARTZ STORE</h1>
+    </header>
+
+    <nav>
         <ul class="navbar">
-            <li> <a href="../index.html">Inicio</a> </li>
-            <li> <a href="paginaRelojes.html">Relojes <a> </li>
-            <li> <a>Contacto</a> </li>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="paginaRelojes.html">Relojes</a></li>
+            <li><a>Contacto</a></li>
         </ul>
-        <div class="wet">
-            <div class="formulario">
-                <form>
-                    <label for="Nombre">Nombre:</label><input id="Nombre" type="text" name="Nombre" value=""/>
-                    <label for="Apellido">Apellido:</label><input id="Apellido" type="text" name="Apellido" value=""/>
-                    <label for="Documento">Documento:</label><input id="Documento" type="text" name="Documento" maxlength="8" value=""/>
-                    <label for="Direccion">Direccion:</label><input id="Direccion" type="text" name="Direccion" value=""/>
-                    <label for="email">Mail de Contacto:</label><input id="email" type="text" name="email" value=""/>
-                    <label> Seleccione su problema
-                    <select class="opciones" name="motivo" id="mot">
-                        <option value="Compra">Compra</option>
-                        <option value="Pago">Pago</option>
-                        <option value="Envio">Envio</option>
-                    </select>
-                    </label>
-                    <label for="observaciones">Observaciones:</label><textarea name="Observaciones" rows="8" cols="40"></textarea>
-                    <p>Captcha:<span id="captcha"></span></p>
-                    <label>Respuesta:</label><input id="respuesta" type="number" name="Respuesta" value=""/> 
-                    <p id="verificacion"></p>
-                    <button class="boton" id="Enviar">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
+    </nav>
+
+    <main class="wet">
+        <section class="formulario">
+            <form>
+                <label for="Nombre">Nombre:</label>
+                <input id="Nombre" type="text" name="Nombre" value=""/>
+
+                <label for="Apellido">Apellido:</label>
+                <input id="Apellido" type="text" name="Apellido" value=""/>
+
+                <label for="Documento">Documento:</label>
+                <input id="Documento" type="text" name="Documento" maxlength="8" value=""/>
+
+                <label for="Direccion">Dirección:</label>
+                <input id="Direccion" type="text" name="Direccion" value=""/>
+
+                <label for="email">Mail de Contacto:</label>
+                <input required id="email" type="text" name="email" value=""/>
+
+                <label>Seleccione su problema:</label>
+                <select class="opciones" name="motivo" id="mot">
+                    <option value="Compra">Compra</option>
+                    <option value="Pago">Pago</option>
+                    <option value="Envio">Envío</option>
+                </select>
+
+                <label for="observaciones">Observaciones:</label>
+                <textarea id="observaciones" name="Observaciones" rows="8" cols="40"></textarea>
+
+                <p>Captcha:<span id="captcha"></span></p>
+                <label for="respuesta">Respuesta:</label>
+                <input id="respuesta" type="number" name="Respuesta" value=""/> 
+
+                <p id="verificacion"></p>
+
+                <button class="boton" id="Enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
         <h4>QUARTZ STORE ©, 2025</h4>
-    </div>
+    </footer>
+
     <script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
