@@ -36,12 +36,27 @@
 
 .cuerpo {
     display: flex;
-    background-color: rgb(240, 236, 230);
-    border: 1px solid black;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: rgb(243, 242, 191);
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    padding: 10px;
 }
 
+
+@media (width <= 768px){
+    .cuerpo {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(243, 242, 191);
+        border: 1px solid white;
+        border-radius: 15px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
 a {
     color: black;
 }
@@ -66,15 +81,10 @@ a {
 .derecha {
     display: flex;
     flex-direction: column;
-    background-color: rgb(240, 236, 230);
+    background-color: rgb(243, 242, 191);
     padding: 10px;
     text-align: center;
     padding-bottom: 5%;
-}
-
-.derecha ul {
-    background-color: azure;
-    list-style: none;
 }
 
 .ePayDesign {
@@ -156,7 +166,7 @@ span {
     list-style: none;
     margin-top: 15px;
     padding: 10px;
-    background-color: #fdfdfd;
+    background-color: rgb(255, 255, 255);
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     font-size: 15px;
@@ -169,7 +179,6 @@ span {
     padding-left: 28px;
     color: #333;
 }
-
 
 .derecha p {
     font-weight: bold;
