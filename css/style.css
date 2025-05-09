@@ -42,6 +42,37 @@
     text-align: center;
 }
 
+.btn_menu {
+    color: white;
+    padding: 15px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn_menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    border-bottom: 4px solid gray;
+    width: 100%;
+    display: flex;
+    background-color: black; 
+}
+
+ul.navbar {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    flex-direction: column;
+}
+
+    ul.navbar.show {
+        display: flex;
+    }
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -238,5 +269,14 @@ span {
 
     .encabezado{
         padding: 20px;
+    }
+
+    .btn_menu {
+        display: none;
+     }
+
+     ul.navbar {
+        display: flex;
+        flex-direction: row;
     }
 }
