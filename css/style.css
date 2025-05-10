@@ -230,7 +230,7 @@ span {
     font-size: 16px;
 }
 
-@media (min-width: 600px){
+@media (min-width: 768px){
     .contenedor {
         display: grid;
         grid-template-columns: 1fr;
