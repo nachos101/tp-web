@@ -55,10 +55,11 @@
 }
 
 .menu {
-    border-bottom: 4px solid gray;
+    border-bottom: 4px solid black;
     width: 100%;
     display: flex;
-    background-color: black; 
+    background-color: black;
+    margin-bottom: 10px; 
 }
 
 ul.navbar {
@@ -164,6 +165,7 @@ table, td, tr {
     padding: 40px;
     border: 1px solid #746c6c;
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 .formulario label {

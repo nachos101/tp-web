@@ -1,4 +1,4 @@
-/*function generarCaptcha() {
+function generarCaptcha() {
     let num1 = Math.floor(Math.random() * 100);
     let num2 = Math.floor(Math.random() * 100);
     
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let boton_enviar = document.getElementById("Enviar");
     boton_enviar.addEventListener("click", verificar);
 });
-*/
+
 document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
 
 function toggleMenu() {
