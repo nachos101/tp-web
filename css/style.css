@@ -110,7 +110,7 @@ ul.navbar {
     padding: 10px;
 }
 
-.wet {
+.contContacto {
     display: flex;
     justify-content: center;
 }
@@ -131,7 +131,16 @@ ul.navbar {
 }
 
 .ePayDesign {
-    background-color: rgb(216, 216, 168);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(139, 139, 139);
+}
+
+.ePayDesign p {
+    color: red;
+    font-size: large;
+    text-align: center;
 }
 
 table, td, tr {
