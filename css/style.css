@@ -6,7 +6,7 @@
 }
 
 .contenedor {
-    background-color: white;
+    background-color: #fdfdfd;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: 
@@ -14,94 +14,80 @@
         "navbar"
         "contPrincipal"
         "derecha"
-        "footer"
-        ;
-}
-.encabezado {
-    grid-area: encabezado;
-}
-.navbar {
-    grid-area: navbar;
-}
-.contPrincipal {
-    grid-area: contPrincipal;
-}
-.derecha {
-    grid-area: derecha;
-}
-.footer {
-    grid-area: footer;
+        "footer";
 }
 
 .encabezado {
-    background-color: white;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
+    grid-area: encabezado;
+    background-color: #fdfdfd;
+    padding: 20px 10px;
     text-align: center;
 }
 
 .btn_menu {
     color: white;
     padding: 15px;
-    background-color: black;
+    background-color: #004c6d;
     cursor: pointer;
 }
 
-.btn_menu a{
+.btn_menu a {
     color: white;
     text-decoration: none;
 }
 
 .menu {
-    border-bottom: 4px solid black;
     width: 100%;
     display: flex;
-    background-color: black;
-    margin-bottom: 10px; 
+    background-color: #004c6d;
+    margin-bottom: 10px;
 }
 
 ul.navbar {
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     display: none;
     flex-direction: column;
 }
 
-    ul.navbar.show {
-        display: flex;
-    }
+ul.navbar.show {
+    display: flex;
+}
 
 .navbar {
     display: flex;
     justify-content: center;
-    border: 1px solid black;
-    border-right: none;
-    border-left: none;
-    background-color: black;
+    background-color: #004c6d;
 }
 
 .navbar li {
     list-style: none;
     margin: 15px;
-    background-color: black;
+    margin-bottom: 5px;
+    background-color: #004c6d;
     color: white;
     padding: 10px;
 }
-.navbar a{
+.navbar li:hover {
+    background-color: #006b97;
+    cursor: pointer;
+}
+
+.navbar a {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: white;
 }
 
 .cuerpo {
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 242, 191);
-    border: 1px solid white;
+    background-color: #e0f0f7;
     border-radius: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 15px 5px;
+    padding: 10px;
 }
 
 .contPrincipal {
@@ -124,17 +110,16 @@ ul.navbar {
 .derecha {
     display: flex;
     flex-direction: column;
-    background-color: rgb(243, 242, 191);
+    background-color: #e0f0f7;
     padding: 10px;
     text-align: center;
-    padding-bottom: 5px;
 }
 
 .ePayDesign {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(139, 139, 139);
+    background-color: #f1f1f1;
 }
 
 .ePayDesign p {
@@ -144,12 +129,14 @@ ul.navbar {
 }
 
 table, td, tr {
-    border: 1px solid black;
+    border: 1px solid #ccc;
     border-collapse: collapse;
 }
 
 .footer {
-    padding-top: 7px;
+    padding: 20px;
+    background-color: #004c6d;
+    color: white;
 }
 
 .boton {
@@ -158,11 +145,8 @@ table, td, tr {
     color: white;
     padding: 10px 24px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    margin-top: 30px;
+    margin: 30px 2px 4px;
     cursor: pointer;
 }
 
@@ -170,11 +154,13 @@ table, td, tr {
     display: grid;
     grid-column: auto;
     gap: 20px;
-    width: 400px;
-    padding: 40px;
-    border: 1px solid #746c6c;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .formulario label {
@@ -194,10 +180,10 @@ textarea {
 
 input[type="text"]:focus,
 textarea:focus {
-    border: 2px solid blue;
+    border: 2px solid #004c6d;
     background-color: white;
     outline: none;
-    box-shadow: 0 0 5px red;
+    box-shadow: 0 0 5px #f9d342;
 }
 
 .formulario textarea {
@@ -210,7 +196,7 @@ textarea:focus {
 }
 
 span {
-    border: 1px solid black;
+    border: 1px solid #ccc;
     padding: 1px;
     margin-left: 15px;
 }
@@ -219,7 +205,7 @@ span {
     list-style: none;
     margin-top: 15px;
     padding: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     font-size: 15px;
@@ -229,7 +215,6 @@ span {
     text-align: center;
     padding: 8px 12px;
     border-bottom: 1px solid #e0e0e0;
-    position: relative;
     color: #333;
 }
 
@@ -239,10 +224,136 @@ span {
     font-size: 16px;
 }
 
-@media (min-width: 768px){
+/*--------------------------Cambiar modo de la pagina-----------------------------------------*/
+
+body, .encabezado, header, footer, .menu, .navbar li, .cuerpo, .formulario, .lista-marcas, span {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#boton_modo {
+    background-color: transparent; 
+    border: none;              
+    color: #e0e0e0;            
+    font-size: 24px;              
+    cursor: pointer;      
+}
+
+
+body.oscuro {
+    background-color: #121212; 
+    color: #e0e0e0;          
+}
+
+.encabezado.oscuro {
+    background-color: black;
+    color: white;
+}
+
+header.oscuro {
+    background-color: #333;  
+}
+
+footer.oscuro {
+    background-color: #1c1c1c; 
+    color: #e0e0e0;
+}
+
+.menu.oscuro {
+    background-color: #222;  
+}
+
+.btn_menu.oscuro {
+    background-color: #333;
+}
+
+.navbar.oscuro {
+    background-color: #333;
+}
+
+.navbar li.oscuro {
+    background-color: #333;
+    color: #e0e0e0;     
+}
+
+.navbar li.oscuro:hover {
+    background-color: #555;
+    color: #e0e0e0;
+    border: none;
+}
+
+.cuerpo.oscuro {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    color: #e0e0e0;
+}
+
+.contPrincipal.oscuro {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.derecha.oscuro {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.ePayDesign.oscuro {
+    background-color: #2a2a2a;
+}
+
+.ePayDesign p.oscuro {
+    color: #ff6b6b;
+}
+
+table.oscuro, td.oscuro, tr.oscuro {
+    border: 1px solid #444;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+.footer.oscuro {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.formulario.oscuro {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+.formulario input.oscuro,
+textarea.oscuro {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #e0e0e0;
+}
+
+input[type="text"].oscuro:focus,
+textarea.oscuro:focus {
+    border: 2px solid #555;
+    background-color: #333;
+    box-shadow: 0 0 5px #888;
+}
+
+.lista-marcas.oscuro {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.lista-marcas li.oscuro {
+    border-bottom: 1px solid #444;
+    color: #e0e0e0;
+}
+
+span.oscuro {
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+@media (min-width: 768px) {
     .contenedor {
-        display: grid;
-        grid-template-columns: 1fr;
         grid-template-areas: 
             "encabezado"
             "navbar"
@@ -257,36 +368,11 @@ span {
         gap: 20px;
     }
 
-    .contPrincipal {
-        grid-column: 1;
-    }
-
-    .derecha {
-        grid-column: 2;
-    }
-
-    .encabezado{
-        grid-area: encabezado;
-    }
-    .navbar{
-        grid-area: navbar;
-    }
-    .cuerpo{
-        grid-area: cuerpo;
-    }
-    .footer{
-        grid-area: footer;
-    }
-
-    .encabezado{
-        padding: 20px;
-    }
-
     .btn_menu {
         display: none;
-     }
+    }
 
-     ul.navbar {
+    ul.navbar {
         display: flex;
         flex-direction: row;
     }

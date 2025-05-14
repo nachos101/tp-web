@@ -32,3 +32,23 @@ document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
 function toggleMenu() {
     document.querySelector(".navbar").classList.toggle("show");
 }
+
+const botonModo = document.getElementById('boton_modo');
+
+function cambiarModo() {
+    const elementosOscuro = document.querySelectorAll(
+        'body,.encabezado, header, footer, .menu,.btn_menu, .navbar, .navbar li, .cuerpo, .contPrincipal, .derecha, .ePayDesign, .ePayDesign p, table, td, tr, .footer, .boton, .formulario, .formulario input, textarea, .lista-marcas, .lista-marcas li, span'
+    );
+
+    elementosOscuro.forEach(elemento => {
+        elemento.classList.toggle('oscuro');
+    });
+
+    if (document.body.classList.contains('oscuro')) {
+        botonModo.textContent = '☀️';
+    } else {
+        botonModo.textContent = '🌙';
+    }
+}
+
+botonModo.addEventListener('click', cambiarModo);
