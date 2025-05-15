@@ -18,12 +18,25 @@
 }
 
 .encabezado {
-    grid-area: encabezado;
+    display: flex;
+    align-items: center;
     background-color: #fdfdfd;
     padding: 20px 10px;
     text-align: center;
 }
 
+.encabezado h1{
+    
+    width: 100%;
+}
+
+.encabezado svg{
+    height: 30px;
+    width: 30px;
+    fill: black;
+}
+
+/*
 .btn_menu {
     color: white;
     padding: 15px;
@@ -35,6 +48,7 @@
     color: white;
     text-decoration: none;
 }
+*/
 
 .menu {
     width: 100%;

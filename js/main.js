@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     boton_enviar.addEventListener("click", verificar);
 });
 
-document.querySelector(".btn_menu").addEventListener("click", toggleMenu);
+document.querySelector("header svg").addEventListener("click", toggleMenu);
 
 function toggleMenu() {
     document.querySelector(".navbar").classList.toggle("show");
@@ -45,9 +45,9 @@ function cambiarModo() {
     });
 
     if (document.body.classList.contains('oscuro')) {
-        botonModo.textContent = '☀️';
+        botonModo.textContent = 'Modo Claro';
     } else {
-        botonModo.textContent = '🌙';
+        botonModo.textContent = 'Modo Oscuro';
     }
 }
 
