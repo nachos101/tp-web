@@ -95,6 +95,12 @@ ul.navbar.show {
     color: white;
 }
 
+.navbar svg{
+    height: 30px;
+    width: 30px;
+    fill: black;
+}
+
 .cuerpo {
     display: flex;
     flex-direction: column;
@@ -261,6 +267,11 @@ body.oscuro {
     background-color: black;
     color: white;
 }
+.encabezado.oscuro svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+}
 
 header.oscuro {
     background-color: #333;  
@@ -375,6 +386,10 @@ span.oscuro {
             "footer";
     }
 
+    .encabezado svg { 
+        display: none;
+    }
+    
     .cuerpo {
         display: grid;
         grid-template-columns: 6fr 1fr;

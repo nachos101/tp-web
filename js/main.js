@@ -44,11 +44,6 @@ function cambiarModo() {
         elemento.classList.toggle('oscuro');
     });
 
-    if (document.body.classList.contains('oscuro')) {
-        botonModo.textContent = 'Modo Claro';
-    } else {
-        botonModo.textContent = 'Modo Oscuro';
-    }
 }
 
 botonModo.addEventListener('click', cambiarModo);
