@@ -25,30 +25,15 @@
     text-align: center;
 }
 
-.encabezado h1{
-    
+.encabezado h1 {
     width: 100%;
 }
 
-.encabezado svg{
+.encabezado svg {
     height: 30px;
     width: 30px;
     fill: black;
 }
-
-/*
-.btn_menu {
-    color: white;
-    padding: 15px;
-    background-color: #004c6d;
-    cursor: pointer;
-}
-
-.btn_menu a {
-    color: white;
-    text-decoration: none;
-}
-*/
 
 .menu {
     width: 100%;
@@ -257,7 +242,6 @@ body, .encabezado, header, footer, .menu, .navbar li, .cuerpo, .formulario, .lis
     cursor: pointer;      
 }
 
-
 body.oscuro {
     background-color: #121212; 
     color: #e0e0e0;          
@@ -286,12 +270,12 @@ footer.oscuro {
     background-color: #222;  
 }
 
-.btn_menu.oscuro {
+.navbar.oscuro {
     background-color: #333;
 }
 
-.navbar.oscuro {
-    background-color: #333;
+.navbar.oscuro svg {
+    fill: white;
 }
 
 .navbar li.oscuro {
@@ -311,22 +295,9 @@ footer.oscuro {
     color: #e0e0e0;
 }
 
-.contPrincipal.oscuro {
+.contPrincipal.oscuro, .derecha.oscuro {
     background-color: #1e1e1e;
     color: #e0e0e0;
-}
-
-.derecha.oscuro {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-}
-
-.ePayDesign.oscuro {
-    background-color: #2a2a2a;
-}
-
-.ePayDesign p.oscuro {
-    color: #ff6b6b;
 }
 
 table.oscuro, td.oscuro, tr.oscuro {
@@ -395,10 +366,6 @@ span.oscuro {
         grid-template-columns: 6fr 1fr;
         grid-template-areas: "contPrincipal derecha";
         gap: 20px;
-    }
-
-    .btn_menu {
-        display: none;
     }
 
     ul.navbar {
