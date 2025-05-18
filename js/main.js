@@ -1,3 +1,5 @@
+"USE STRICT"
+//Captcha
 function generarCaptcha() {
     let num1 = Math.floor(Math.random() * 100);
     let num2 = Math.floor(Math.random() * 100);
@@ -26,3 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let boton_enviar = document.getElementById("Enviar");
     boton_enviar.addEventListener("click", verificar);
 });
+
+//Menu Plegable
+document.querySelector("header svg").addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    document.querySelector(".navbar").classList.toggle("show");
+}

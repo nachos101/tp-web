@@ -1,8 +1,4 @@
-document.querySelector("header svg").addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-    document.querySelector(".navbar").classList.toggle("show");
-}
+"USE STRICT"
 
 const botonModo = document.getElementById('boton_modo');
 
