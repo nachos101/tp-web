@@ -1,5 +1,12 @@
 "USE STRICT"
 
+//Menu Plegable
+document.querySelector("header svg").addEventListener("click", toggleMenu);
+
+function toggleMenu() {
+    document.querySelector(".navbar").classList.toggle("show");
+}
+//Modo Oscuro
 const botonModo = document.getElementById('boton_modo');
 
 function cambiarModo() {

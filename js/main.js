@@ -28,10 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
     let boton_enviar = document.getElementById("Enviar");
     boton_enviar.addEventListener("click", verificar);
 });
-
-//Menu Plegable
-document.querySelector("header svg").addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-    document.querySelector(".navbar").classList.toggle("show");
-}
