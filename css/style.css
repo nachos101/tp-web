@@ -33,6 +33,7 @@
     height: 30px;
     width: 30px;
     fill: black;
+    cursor:pointer;
 }
 
 .menu {
@@ -234,94 +235,62 @@ span {
 body, .encabezado, header, footer, .menu, .navbar li, .cuerpo, .formulario, .lista-marcas, span {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+#boton_modo,body.oscuro, .encabezado.oscuro, footer.oscuro, .navbar li.oscuro, .navbar li.oscuro:hover, .cuerpo.oscuro, .contPrincipal.oscuro, .derecha.oscuro, 
+table.oscuro, td.oscuro, tr.oscuro,.footer.oscuro, .formulario.oscuro, .formulario input.oscuro, textarea.oscuro, .lista-marcas.oscuro, .lista-marcas li.oscuro, span.oscuro {
+    color: white;
+}
+
+.encabezado.oscuro, footer.oscuro, .cuerpo.oscuro, .contPrincipal.oscuro, .derecha.oscuro, table.oscuro, td.oscuro, tr.oscuro, .formulario.oscuro, .footer.oscuro, .lista-marcas.oscuro, .lista-marcas li.oscuro, span.oscuro {
+    background-color: rgb(29, 29, 29);
+}
+
 #boton_modo {
     background-color: transparent; 
-    border: none;              
-    color: #e0e0e0;            
+    border: none;                         
     font-size: 24px;              
     cursor: pointer;      
 }
 
 body.oscuro {
-    background-color: #121212; 
-    color: #e0e0e0;          
+    background-color: #121212;     
 }
 
-.encabezado.oscuro {
-    background-color: black;
-    color: white;
-}
 .encabezado.oscuro svg{
     height: 30px;
     width: 30px;
     fill: white;
 }
 
-header.oscuro {
+header.oscuro,.navbar.oscuro,.navbar li.oscuro {
     background-color: #333;  
 }
 
-footer.oscuro {
-    background-color: #1c1c1c; 
-    color: #e0e0e0;
-}
 
 .menu.oscuro {
     background-color: #222;  
-}
-
-.navbar.oscuro {
-    background-color: #333;
 }
 
 .navbar.oscuro svg {
     fill: white;
 }
 
-.navbar li.oscuro {
-    background-color: #333;
-    color: #e0e0e0;     
-}
-
 .navbar li.oscuro:hover {
     background-color: #555;
-    color: #e0e0e0;
     border: none;
 }
 
 .cuerpo.oscuro {
-    background-color: #1e1e1e;
     border-radius: 15px;
-    color: #e0e0e0;
 }
 
-.contPrincipal.oscuro, .derecha.oscuro {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-}
-
-table.oscuro, td.oscuro, tr.oscuro {
+table.oscuro, td.oscuro, tr.oscuro, .formulario.oscuro, .formulario input.oscuro,textarea.oscuro, .lista-marcas li.oscuro, span.oscuro {
     border: 1px solid #444;
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-}
-
-.footer.oscuro {
-    background-color: #1c1c1c;
-    color: #e0e0e0;
-}
-
-.formulario.oscuro {
-    background-color: #1e1e1e;
-    border: 1px solid #444;
-    color: #e0e0e0;
 }
 
 .formulario input.oscuro,
 textarea.oscuro {
     background-color: #2a2a2a;
-    border: 1px solid #444;
-    color: #e0e0e0;
 }
 
 input[type="text"].oscuro:focus,
@@ -332,20 +301,11 @@ textarea.oscuro:focus {
 }
 
 .lista-marcas.oscuro {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
     box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
 }
 
-.lista-marcas li.oscuro {
-    border-bottom: 1px solid #444;
-    color: #e0e0e0;
-}
-
 span.oscuro {
-    border: 1px solid #444;
     background-color: #2a2a2a;
-    color: #e0e0e0;
 }
 
 @media (min-width: 768px) {
