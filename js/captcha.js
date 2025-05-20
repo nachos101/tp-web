@@ -4,8 +4,8 @@ function generarCaptcha() {
     let num1 = Math.floor(Math.random() * 100);
     let num2 = Math.floor(Math.random() * 100);
     
-    let captcha = num1 + num2; // Asigna el valor al campo de entrada
-    document.getElementById("captcha").innerHTML = captcha; // Muestra el captcha en el elemento HTML
+    let captcha = num1 + num2; 
+    document.getElementById("captcha").innerHTML = captcha; 
 }
 
 function verificar(event) {

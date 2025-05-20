@@ -128,7 +128,7 @@ ul.navbar.show {
     background-color: #f1f1f1;
 }
 
-.ePayDesign p {
+.ePayDesign p,a {
     color: red;
     font-size: large;
     text-align: center;
