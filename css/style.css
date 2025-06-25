@@ -232,6 +232,75 @@ span {
     font-size: 16px;
 }
 
+.ocultar {
+  display: none;
+}
+.mostrar {
+  display: inline-block;
+}
+
+#tablaRelojes {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#tablaRelojes thead {
+    background-color: #004c6d;
+    color: white;
+}
+
+#tablaRelojes th,
+#tablaRelojes td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+#tablaRelojes tr:hover {
+    background-color: #f1f9ff;
+}
+
+#tablaRelojes button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#tablaRelojes .comprar {
+    background-color: #4CAF50;
+}
+
+#tablaRelojes .comprar:hover {
+    background-color: #45a049;
+}
+
+#tablaRelojes .editar {
+    background-color: #ffc107;
+    color: black;
+}
+
+#tablaRelojes .editar:hover {
+    background-color: #e0a800;
+}
+
+#tablaRelojes .eliminar {
+    background-color: #dc3545;
+}
+
+#tablaRelojes .eliminar:hover {
+    background-color: #c82333;
+}
+
 /*--------------------------Cambiar modo de la pagina-----------------------------------------*/
 
 body, .encabezado, header, footer, .menu, .navbar li, .cuerpo, .formulario, .lista-marcas, span {

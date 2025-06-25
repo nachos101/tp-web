@@ -21,16 +21,30 @@
     </nav>
     <main class="cuerpo">
         <section>
-            <table id="tablaRelojes">                        
+            <table id="tablaRelojes">
+                <thead>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Disponibilidad</th>
+                        <th>Precio</th>
+                        <th>Comprar</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpoTabla">
+                </tbody>
             </table>
         </section>
 
-        <form id="formulario">
+        <form class="formulario" id="formularioRelojes">
             <input name="Marca" type="text" id="marca" placeholder="Marca">
             <input name="Modelo" type="text" id="modelo" placeholder="Modelo">
             <input name="Disponibilidad" type="text" id="disponibilidad" placeholder="Disponibilidad">
             <input name="Precio" type="text" id="precio" placeholder="Precio">
-            <button type="submit" id="btn-agregar">Agregar Reloj</button>
+            <button type="submit" id="btn-agregar" class="boton mostrar">Agregar Reloj</button>
+            <button type="button" id="btn-editar" class="boton ocultar">Guardar Cambios</button>
         </form>
     </main>
     <footer class="footer">
