@@ -70,7 +70,6 @@ async function eliminarReloj(id) {
         await fetch(`${url}/${id}`, {
             method: "DELETE"
         });
-        await mostrarTabla();
     } catch (error) {
         console.error("Error al eliminar el reloj:", error);
     }
