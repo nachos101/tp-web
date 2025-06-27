@@ -7,7 +7,6 @@ const form = document.getElementById("formularioRelojes");
 
 document.addEventListener("DOMContentLoaded", async () => {
     await mostrarTabla();
-    asignarEventosEliminar();
 });
 
 async function agregarTabla(event) {
