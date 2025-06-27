@@ -47,7 +47,7 @@ async function mostrarTabla() {
                 <td>${reloj.Modelo}</td>
                 <td>${reloj.Disponibilidad}</td>
                 <td>${reloj.Precio}</td>
-                <td><button class="comprar"><a href="Compra.html">Comprar</a></button></td>
+                <td><a class="comprar" href="Compra.html">Comprar</a></td>
                 <td><button class="editar" data-id="${reloj.id}">Editar</button></td>
                 <td><button class="eliminar" data-id="${reloj.id}">Eliminar</button></td>
             `;
